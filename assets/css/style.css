@@ -1,0 +1,233 @@
+:root {
+	--theme-color: var(--bs-blue);
+}
+
+div#header {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 0;
+    -webkit-backdrop-filter: blur(15px);
+            backdrop-filter: blur(15px);
+    box-shadow: 0 .275rem .75rem -0.0625rem rgba(19, 16, 34, .06), 0 .125rem .4rem -0.0625rem rgba(19, 16, 34, .03);
+}
+
+div#header .navbar-brand {
+    margin-right: 30px;
+}
+
+div#header .navbar-brand img {
+    max-height: 50px;
+}
+
+div#header .navbar-toggler {
+    border: none;
+}
+
+div#header li.nav-item {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+div#header li.nav-item > a {
+    color: #333;
+    text-decoration: none;
+}
+
+div#header li.nav-item.active > a,
+div#header li.nav-item:hover > a {
+    color: var(--theme-color);
+}
+
+div#content {
+    margin-top: 80px;
+}
+
+div#hero {
+    background-color: #00091e;
+    background-image: url(../images/humogen.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 60px 0;
+}
+
+div#hero i.fa {
+    text-align: center;
+    width: 20px;
+}
+
+div.section {
+    padding: 40px 0;
+}
+
+div.section h2 {
+    margin-bottom: 30px;
+}
+
+th:first-child {
+    width: 135px;
+}
+
+td {
+    vertical-align: middle;
+}
+
+td.programme p.title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+td.programme p.abstract,
+td.programme p.bio {
+    color: #333;
+    display: none;
+    font-size: 14px;
+}
+
+td.programme ul.list-inline {
+    margin: 10px 0;
+}
+
+td.programme a {
+    text-decoration: none;
+}
+
+td.programme .avatar {
+    display: inline-block;
+    max-width: 48px;
+    margin-right: 10px;
+}
+
+td.programme .avatar img {
+    border-radius: 50%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+td.programme .speaker span.position {
+    color: #666;
+    font-size: 14px;
+}
+
+div.card {
+    border: none;
+    margin-bottom: 20px;
+    padding: 18px 5px;
+    text-align: center;
+    transition: transform .2s ease-in-out, border-color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;transition: transform 0.3s ease;
+}
+
+div.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 3px 10px -1px;
+    transform: translateY(-3px);
+}
+
+div.card a {
+    color: #333;
+    text-decoration: none;
+}
+
+div.card img {
+    border-radius: 50%;
+    margin: 0 auto;
+    max-width: 160px;
+}
+
+div.card img.card-img-square {
+    border-radius: 4px;
+}
+
+div.card p.card-title {
+    font-size: 18px;
+}
+
+div.card p.card-text {
+    color: #999;
+    font-size: 14px;
+}
+
+div.card ul.list-inline {
+    margin: 0;
+}
+
+div.card li.list-inline-item {
+    border-radius: 4px;
+    border: 1px solid #d4d7e5;
+    color: #3e4265;
+    padding: 4px 0;
+    text-align: center;
+    width: 34px;
+}
+
+div.card li.list-inline-item:hover {
+    background-color: var(--theme-color);
+}
+
+div.card li.list-inline-item:hover > a {
+    color: #fff;
+}
+
+li.sponsor img {
+    width: 160px;
+}
+
+div#footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0;
+}
+
+div#footer img {
+    display: inline-block;
+    max-height: 120px;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 991px) {
+    div#navbar {
+        height: 100vh;
+        width: 336px;
+    }
+
+    div#navbar .offcanvas-header {
+        padding: 25px;
+    }
+
+    div#navbar .offcanvas-body {
+        padding: 25px;
+    }
+
+    div#navbar .offcanvas-body li.nav-item {
+        padding: 10px 0;
+    }
+
+    div#hero {
+        padding: 80px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    div#header #logo {
+        display: block;
+    }
+
+    div#header li.list-inline-item {
+        display: none;
+    }
+
+    div.section h2 {
+        margin-bottom: 10px;
+    }
+
+    div.card-body {
+        padding: 16px 0;
+    }
+
+    div#hero {
+        padding: 60px 0;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+}
